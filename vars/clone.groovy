@@ -1,8 +1,5 @@
-def call("string giturl")
+def call(String giturl) {
+    git branch: 'master',
+        url: $giturl
+}
 
-stage('Clone Repository') {
-            steps {
-                git branch: 'master',
-                    url: "$giturl"
-            }
-        }
