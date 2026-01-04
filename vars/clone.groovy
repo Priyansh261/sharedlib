@@ -1,5 +1,4 @@
-def call(String giturl) {
-    git branch: 'master',
-        url: $giturl
+def call(String name) {
+echo "myname is $name"
 }
 
